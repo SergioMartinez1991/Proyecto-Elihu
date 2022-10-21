@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestor de usuarios GN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-between" style="height: 140px">
+        <div><img src="img/icon_app.png" alt="Guardia Nacional"></div>
+        <h1 class="text-center my-5 titulo" style="font-size: 40px" >Gestor de Usuarios GN</h1>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar usuario" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+
+    <!-- <h1 class="text-center my-5 titulo">Gestor de Usuarios GN</h1> -->
+    <div class="container mt-5 p-5">
+        <div id="content" class="row">
+            <div class="col-md-6 add-user">
+                <form id="new-user">
+                    <h2 class="mb-4">Datos del Usuario</h2>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Usuario:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="userName" name="userName" class="form-control"
+                                placeholder="Nombre del usuario">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Apellido:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="lastName" name="lastName" class="form-control"
+                                placeholder="Apellido del usuario">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="telephone" name="telephone" class="form-control"
+                                placeholder="Número de Teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Correo electrónico:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Correo electrónico">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Institución:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="institution" name="institution" class="form-control"
+                                placeholder="Institución">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Sistema operativo:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="system" name="system" class="form-control"
+                                placeholder="Sistema operativo">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success w-100 d-block" style=" background-color: #621132;">Guardar usuario</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 id="administra" class="mb-4">Bitácora de usuarios</h2>
+                <ul id="users" class="list-group lista-users" style="border-style: solid"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js">
+
+    </script>
+
+</body>
+
+</html>
